@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <head>
+    <title>Send a Love Letter!</title>
+  </head>
+  
+  <body>
+    <div class = "wrap">
+      <h1>Love Letter</h1>
+      <div class = "postcard">
+  
+        <div class = "letter">
+          <form action="#" method="post" class="message_form">
+            <p class = "push">Dear </p><input type = "text" id = "recipient" name = "recipient_name" placeholder = "Reffa" class = "push"><p> ,</p><br>
+            <label for = "message">Message</label><br>
+            <textarea id = "message" name = "message_to_recipient" placeholder = "So, in this love letter i don't want to talk much. The first think i want to say to reffa still healty and feeling better in everyday even in worse day or in a good day hehe, maybe its not quite long hehe and i hope after this event we can chit-chat as a possible. because you look perfect. xixi thank you"></textarea><br>
+            <p>Yours Lovingly, </p><br>
+            <input type = "text" id = "sender_name" name = "sender" placeholder = "anonym">
+          </form>
+        </div>
+  
+        <div class = "address">
+          <img src = "http://i44.photobucket.com/albums/f9/dandee114/stamp_zpsvbuxiwih.png" class = "mail_stamp">
+          <form action="#" method="post" class="message_form">
+          <input type = "email" id = "recipient_email" name = "recipient_email" placeholder = "Reffa's email..">
+          </form>
+          <a href="https://www.youtube.com/watch?v=zcB5BR_eEu4" class="fas fa-music" style="font-size:20px"> click icon</a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <footer>
+      <p>Happily crafted anonym.</p>
+    </footer>
+
+  <!-- script js -->
+    <script>
+      var objXMLHttpRequest = new XMLHttpRequest();
+      objXMLHttpRequest.onreadystatechange = function() {
+           if(objXMLHttpRequest.readyState === 4) {
+               if(objXMLHttpRequest.status === 200) {
+                   alert(objXMLHttpRequest.responseText);
+                   
+                       } else {
+                             alert('Hello Reffa ! Hows your day??');
+                                alert('Ahahaha my day its a kind untill when i see you, i hope your day its a great too');
+                                  alert('Its love letter for youu, reffa!');
+                                  alert('ya mungkin agak cringe sih tapi ya semoga suka lah');
+                        }
+                    }
+                  }
+                  
+                  //passing command
+                  objXMLHttpRequest.open('GET', 'request_ajax_data.php');
+                  objXMLHttpRequest.send();
+                  </script>
+
+</body>
+</html>
